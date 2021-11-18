@@ -23,6 +23,7 @@ body {
 
 a {
     color: rgb(68, 255, 236);
+
 }
 
 a:hover {
@@ -30,11 +31,16 @@ a:hover {
 }
 
 #header {
-    background-color: rgb(14, 39, 112);
+    background-color: rgb(25, 56, 150);
+    border-bottom: 15px groove silver;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100vw;
 }
 
 #header-text {
@@ -46,19 +52,141 @@ a:hover {
 #about {
     background-color: #e0e0e0;
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#construction-black {
+    border: 4px dashed black;
+    margin: 5%;
 }
 
 #construction {
     background-color: rgba(184, 181, 3, 0.151);
-    border: 4px dashed yellow;
-    margin: 5%;
+    border: 4px solid rgba(255, 255, 0, 0.808);
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     padding: 20px;
+    align-self: stretch;
 }
 
 #construction p {
     margin: 0% 20%;
+}
+
+#info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: stretch;
+    padding: 40px;
+    gap: 30px;
+}
+
+.card {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 400px;
+    max-height: 400px;
+    border: 5px outset rgb(163, 162, 162);
+    box-shadow: 10px 10px 8px rgba(143, 143, 143, 0.993);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.card p {
+    padding: 0 20px;
+}
+
+.card h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px;
+    color:rgb(24, 130, 179);
+    align-self: stretch;
+    text-align: center;
+    border-bottom: 3px solid rgb(180, 179, 179);
+}
+
+#projects {
+    padding: 5% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-header {
+    font-size: 55px;
+    font-weight: bold;
+    border-bottom: 8px solid slategrey;
+    align-self: stretch;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #e0e0e0;
+    position: sticky;
+    top: 128px;
+}
+
+.project a {
+    color:rgb(25, 56, 150);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.project p a {
+    color:rgb(25, 56, 150);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: stretch;
+    padding: 0 30px;
+    border-right: 5px solid gainsboro;
+}
+
+.project p {
+    margin: 0;
+    font-size: 24px;
+    border-left: 3px solid grey;
+    background-color: rgba(128, 128, 128, 0.144);
+    padding: 30px;
+}
+
+.project h1 {
+    background-color: #f1f1f1;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(117, 117, 117);
+    border: 2px solid slategrey;
+}
+
+.project h2 { 
+    font-size: 34px;
+    color:rgb(117, 117, 117);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project ul {
+    font-size: 24px;
+    margin: 0;
+}
+
+.wip {
+    color:rgb(255, 196, 0);
+    font-weight: bold;
 }
