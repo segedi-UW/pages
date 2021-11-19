@@ -1,3 +1,11 @@
+video {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    width: 40vw;
+    height: 30vw;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -131,7 +139,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 10vh;
 }
 
 .project-header {
@@ -142,8 +150,10 @@ a:hover {
     text-align: center;
     padding-bottom: 15px;
     background-color: #e0e0e0;
+    /*
     position: sticky;
     top: 128px;
+    */
 }
 
 .project a {
@@ -155,7 +165,6 @@ a:hover {
 .project p a {
     color:rgb(25, 56, 150);
     font-size: 24px;
-    text-decoration: none;
 }
 
 .project {
@@ -183,6 +192,7 @@ a:hover {
     font-weight: bold;
     color:rgb(117, 117, 117);
     border: 2px solid slategrey;
+    border-radius: 6px;
 }
 
 .project h2 { 
