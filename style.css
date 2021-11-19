@@ -160,8 +160,8 @@ a:hover {
 .project p {
     margin: 0;
     font-size: 24px;
-    border-left: 3px solid grey;
-    background-color: rgba(128, 128, 128, 0.144);
+    border-left: 3px solid purple;
+    background-color: rgba(128, 0, 128, 0.048);
     padding: 30px;
 }
 
@@ -171,16 +171,18 @@ a:hover {
     margin: 0;
     font-size: 50px;
     font-weight: bold;
-    color:rgb(117, 117, 117);
+    color: rgb(24, 130, 179);
     border: 2px solid slategrey;
     border-radius: 6px;
 }
 
 .project h2 { 
+    padding-left: 1ex;
     font-size: 34px;
     color:rgb(117, 117, 117);
     font-weight: bold;
     margin: 10px 0;
+    text-decoration: underline;
 }
 
 .project ul {
@@ -191,4 +193,8 @@ a:hover {
 .wip {
     color:rgb(255, 196, 0);
     font-weight: bold;
+}
+
+.links {
+    text-align: right;
 }
