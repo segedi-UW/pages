@@ -178,11 +178,10 @@ a:hover {
 
 .project h2 { 
     padding-left: 1ex;
-    font-size: 34px;
+    font-size: 38px;
     color:rgb(117, 117, 117);
     font-weight: bold;
     margin: 10px 0;
-    text-decoration: underline;
 }
 
 .project ul {
@@ -196,5 +195,16 @@ a:hover {
 }
 
 .links {
+    align-self: flex-end;
+    display: inline-flex;
+    flex-direction: column;
     text-align: right;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: goldenrod;
 }
