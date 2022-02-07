@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 video {
     margin: 0;
     padding: 0;
@@ -13,6 +17,8 @@ body {
     margin: 0;
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(241, 237, 237);
+    overflow-x: hidden;
 }
 
 #navigation-bar ul {
@@ -46,9 +52,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
     width: 100vw;
 }
 
@@ -115,12 +118,55 @@ a:hover {
     margin: 0 1rem;
 }
 
-#projects {
-    padding: 5% 20%;
+#project-nav {
+    text-align: center;
+    position: sticky;
     display: flex;
+    flex-direction: column;
+    top: 20%;
+    margin: 5%;
+    z-index: 3;
+    max-width: 3cm;
+    min-height: 10cm;
+    max-height: 10cm;
+}
+
+#project-nav a {
+    background-color: slategrey;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid black;
+    border-bottom-style: none;
+    padding: 1ch;
+}
+
+#project-nav a:hover {
+    background-color: white;
+    background-color: royalblue;
+}
+
+#project-nav a.start {
+    border-radius: 16px 16px 0 0;
+}
+
+#project-nav a.end {
+    border-bottom-style: solid;
+    border-radius: 0 0 16px 16px;
+}
+
+#projects {
+    position: relative;
+    top: -10cm;
+    margin: 5% 20%;
+    padding: 3ch;
+    display: flex;
+    box-shadow: 0 0 16px black;
     flex-direction: column;
     align-items: center;
     gap: 10vh;
+    background-color: white;
+    z-index: 10;
 }
 
 .project-header {
